@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c70oam6tkojeo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ywsw1"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"volar",
+"speed": 5.0
+}]
+
+[node name="Mundo" type="Node2D" unique_id=581980896]
+
+[node name="Murcielago" type="AnimatedSprite2D" parent="." unique_id=884672647]
+sprite_frames = SubResource("SpriteFrames_ywsw1")
+animation = &"volar"

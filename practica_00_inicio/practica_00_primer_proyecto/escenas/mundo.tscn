@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cb25oymcyac8q"]
+
+[ext_resource type="Texture2D" uid="uid://rvxvys4qf03q" path="res://assets/personaje.png" id="1_cdbbl"]
+[ext_resource type="Texture2D" uid="uid://dqa14esu1eeqb" path="res://assets/moneda.png" id="2_6wjgb"]
+
+[node name="Mundo" type="Node2D" unique_id=1106516674]
+
+[node name="Personaje" type="Sprite2D" parent="." unique_id=736281098]
+position = Vector2(160, 90)
+texture = ExtResource("1_cdbbl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1235691375]
+position = Vector2(100, 90)
+texture = ExtResource("2_6wjgb")
