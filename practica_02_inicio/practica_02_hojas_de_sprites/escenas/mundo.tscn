@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cwq6keiewr7qs"]
+
+[ext_resource type="Texture2D" uid="uid://ctctg87seahu6" path="res://assets/hoja_murcielago.png" id="1_cdbbl"]
+[ext_resource type="Texture2D" uid="uid://cq5pxrxie4a5" path="res://assets/hoja_personajes.png" id="2_6wjgb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdbbl"]
+atlas = ExtResource("1_cdbbl")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glrvs"]
+atlas = ExtResource("2_6wjgb")
+region = Rect2(150, 52, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v12yk"]
+atlas = ExtResource("2_6wjgb")
+region = Rect2(175, 52, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16hu1"]
+atlas = ExtResource("2_6wjgb")
+region = Rect2(200, 52, 24, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0m7wx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdbbl")
+}],
+"loop": 1,
+"name": &"quieto",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glrvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v12yk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16hu1")
+}],
+"loop": 1,
+"name": &"volar",
+"speed": 10.0
+}]
+
+[node name="Mundo" type="Node2D" unique_id=582840184]
+
+[node name="Muercielago" type="AnimatedSprite2D" parent="." unique_id=2122098101]
+position = Vector2(160, 90)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_0m7wx")
+animation = &"volar"
+autoplay = "volar"
