@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://byc3rndpiiipo"]
+
+[ext_resource type="Texture2D" uid="uid://cbwntilxhm487" path="res://assets/personaje_1.png" id="1_6wjgb"]
+[ext_resource type="Texture2D" uid="uid://b5r0ksflr5c62" path="res://assets/personaje_2.png" id="2_glrvs"]
+[ext_resource type="Script" uid="uid://cxxtjobm7jdg4" path="res://scripts/personaje.gd" id="3_glrvs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0m7wx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6wjgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_glrvs")
+}],
+"loop": 1,
+"name": &"caminar",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6wjgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_glrvs")
+}],
+"loop": 1,
+"name": &"correr",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6wjgb")
+}],
+"loop": 1,
+"name": &"quieto",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_glrvs")
+}],
+"loop": 1,
+"name": &"saltar",
+"speed": 5.0
+}]
+
+[node name="Mundo" type="Node2D" unique_id=2065558933]
+
+[node name="Personaje" type="AnimatedSprite2D" parent="." unique_id=1340034465]
+position = Vector2(138, 86)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_0m7wx")
+animation = &"quieto"
+autoplay = "quieto"
+script = ExtResource("3_glrvs")
