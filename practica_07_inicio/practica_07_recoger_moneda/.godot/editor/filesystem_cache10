@@ -1,0 +1,11 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1791445871
+::res://assets/::1791445595
+CREDITOS.md::TextFile::-1::1791445595::0::1::::<><><>0<>0<><>::
+moneda.png::CompressedTexture2D::2093925099747379540::1791445595::1791445871::1::::<><><>0<>0<>76aabbdc58bedbca9ece0aa76f4e3b64<>res://.godot/imported/moneda.png-f31d307b3d765731500bb8cc71e2b26b.ctex::
+personaje_1.png::CompressedTexture2D::7965909308384592156::1791445595::1791445871::1::::<><><>0<>0<>701d112782332bd1082a2a4f80cdfb57<>res://.godot/imported/personaje_1.png-0a29a2ef37c79b5cbea3f3aa46d50113.ctex::
+personaje_2.png::CompressedTexture2D::3634317451286751043::1791445595::1791445871::1::::<><><>0<>0<>1fd4774d814fad47cb8cfba393581f87<>res://.godot/imported/personaje_2.png-ac6b7cfb57c8dbb22de2048112823d93.ctex::
+::res://escenas/::1791445595
+personaje.tscn::PackedScene::-1::1791445595::0::1::::<><><>0<>0<><>::res://scripts/personaje.gd<>res://assets/personaje_1.png
+::res://scripts/::1791445595
+personaje.gd::GDScript::2521237968309841548::1791445595::0::1::::<>CharacterBody2D<><>0<>0<><>::

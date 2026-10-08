@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dhaxpu3hgkmmu"]
+
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="1_5nfxw"]
+[ext_resource type="Script" uid="uid://8qnw30x8nplm" path="res://scripts/personaje.gd" id="2_mcw2a"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5nfxw"]
+radius = 9.219544
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gtlrw"]
+
+[node name="Mundo" type="Node2D" unique_id=326738866]
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=1320356834]
+position = Vector2(160, 90)
+script = ExtResource("2_mcw2a")
+
+[node name="Imagen" type="Sprite2D" parent="Personaje" unique_id=1578761348]
+texture = ExtResource("1_5nfxw")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Personaje" unique_id=1724129806]
+shape = SubResource("CircleShape2D_5nfxw")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=406797023]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1359658238]
+position = Vector2(90, 90)
+shape = SubResource("RectangleShape2D_gtlrw")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b02f7bjca86un"]
+
+[ext_resource type="Script" uid="uid://bw41d18xa2uum" path="res://scripts/moneda.gd" id="1_ponsd"]
+[ext_resource type="Texture2D" uid="uid://bj2fl7mgcyct0" path="res://assets/1_euro.png" id="2_ponsd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_txhqv"]
+radius = 8.0
+
+[node name="Moneda" type="Area2D" unique_id=1041828076 groups=["monedas"]]
+script = ExtResource("1_ponsd")
+
+[node name="Imagen" type="Sprite2D" parent="." unique_id=1026614653]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_ponsd")
+
+[node name="FormaColision" type="CollisionShape2D" parent="." unique_id=1282520253]
+shape = SubResource("CircleShape2D_txhqv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

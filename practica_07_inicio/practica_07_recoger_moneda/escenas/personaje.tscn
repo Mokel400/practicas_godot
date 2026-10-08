@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dm5mrtl7modhc"]
+
+[ext_resource type="Script" uid="uid://bb6kokwhrogl5" path="res://scripts/personaje.gd" id="1_5nfxw"]
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="2_mcw2a"]
+[ext_resource type="Script" uid="uid://b8efs6gh3bvk0" path="res://scripts/moneda.gd" id="3_40a7a"]
+[ext_resource type="Texture2D" uid="uid://43kv1m5rokg7" path="res://assets/moneda.png" id="4_bg0f4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40a7a"]
+size = Vector2(16, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0m7wx"]
+radius = 8.0
+
+[node name="Mundo" type="Node2D" unique_id=1952267439]
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=73838861]
+position = Vector2(160, 90)
+script = ExtResource("1_5nfxw")
+
+[node name="Imagen" type="Sprite2D" parent="Personaje" unique_id=1343887121]
+texture = ExtResource("2_mcw2a")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Personaje" unique_id=1639277092]
+shape = SubResource("RectangleShape2D_40a7a")
+
+[node name="Moneda" type="Area2D" parent="." unique_id=2013556808]
+position = Vector2(230, 90)
+script = ExtResource("3_40a7a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda" unique_id=1047791049]
+shape = SubResource("CircleShape2D_0m7wx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Moneda" unique_id=1489192946]
+texture = ExtResource("4_bg0f4")
+
+[connection signal="body_entered" from="Moneda" to="Moneda" method="_on_body_entered"]
+[connection signal="body_exited" from="Moneda" to="Moneda" method="_on_body_exited"]

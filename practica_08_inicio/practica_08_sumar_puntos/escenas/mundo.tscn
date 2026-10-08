@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://c07hv7cqu3upp"]
+
+[ext_resource type="Script" uid="uid://77mk555oy5tt" path="res://scripts/mundo.gd" id="1_16hu1"]
+[ext_resource type="Script" uid="uid://bb6kokwhrogl5" path="res://scripts/personaje.gd" id="1_v12yk"]
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="2_16hu1"]
+[ext_resource type="PackedScene" uid="uid://b02f7bjca86un" path="res://escenas/moneda.tscn" id="3_glrvs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40a7a"]
+size = Vector2(16, 20)
+
+[node name="Mundo" type="Node2D" unique_id=1952267439]
+script = ExtResource("1_16hu1")
+
+[node name="Moneda" parent="." unique_id=1041828076 instance=ExtResource("3_glrvs")]
+position = Vector2(230, 90)
+
+[node name="Moneda2" parent="." unique_id=1362105512 instance=ExtResource("3_glrvs")]
+position = Vector2(60, 50)
+
+[node name="Moneda3" parent="." unique_id=681443098 instance=ExtResource("3_glrvs")]
+position = Vector2(150, 140)
+
+[node name="Moneda4" parent="." unique_id=176044645 instance=ExtResource("3_glrvs")]
+position = Vector2(80, 170)
+
+[node name="Moneda5" parent="." unique_id=1878506882 instance=ExtResource("3_glrvs")]
+position = Vector2(300, 150)
+
+[node name="Moneda6" parent="." unique_id=1704316345 instance=ExtResource("3_glrvs")]
+position = Vector2(90, 60)
+
+[node name="Moneda7" parent="." unique_id=1835650620 instance=ExtResource("3_glrvs")]
+position = Vector2(10, 90)
+
+[node name="Moneda8" parent="." unique_id=1687492633 instance=ExtResource("3_glrvs")]
+position = Vector2(280, 0)
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=73838861]
+position = Vector2(160, 90)
+script = ExtResource("1_v12yk")
+
+[node name="Imagen" type="Sprite2D" parent="Personaje" unique_id=1343887121]
+texture = ExtResource("2_16hu1")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Personaje" unique_id=1639277092]
+shape = SubResource("RectangleShape2D_40a7a")
+
+[node name="Interfaz" type="CanvasLayer" parent="." unique_id=1809781964]
+
+[node name="Puntos" type="Label" parent="Interfaz" unique_id=1557001262]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Puntos : 0"
+
+[connection signal="recogida" from="Moneda" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda2" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda3" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda4" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda5" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda6" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda7" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda8" to="." method="_on_moneda_recogida"]
