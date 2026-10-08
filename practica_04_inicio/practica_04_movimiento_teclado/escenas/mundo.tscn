@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bedfikrcp5o27"]
+
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="1_6wjgb"]
+[ext_resource type="Texture2D" uid="uid://br1qxbegqxdb4" path="res://assets/personaje_2.png" id="2_glrvs"]
+[ext_resource type="Script" uid="uid://bwve4utv4yswh" path="res://scripts/personaje.gd" id="3_glrvs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0m7wx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6wjgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_glrvs")
+}],
+"loop": 1,
+"name": &"caminar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6wjgb")
+}],
+"loop": 1,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[node name="Mundo" type="Node2D" unique_id=1153166281]
+
+[node name="Personaje" type="AnimatedSprite2D" parent="." unique_id=1323436713]
+position = Vector2(160, 90)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_0m7wx")
+animation = &"quieto"
+autoplay = "quieto"
+script = ExtResource("3_glrvs")

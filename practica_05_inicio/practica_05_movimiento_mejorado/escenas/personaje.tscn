@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dmmhkcqltiwnh"]
+
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="1_5nfxw"]
+[ext_resource type="Script" uid="uid://g15ngulvhl4x" path="res://scripts/personaje.gd" id="2_mcw2a"]
+
+[node name="Mundo" type="Node2D" unique_id=326738866]
+
+[node name="Personaje" type="Sprite2D" parent="." unique_id=1578761348]
+position = Vector2(160, 90)
+texture = ExtResource("1_5nfxw")
+script = ExtResource("2_mcw2a")

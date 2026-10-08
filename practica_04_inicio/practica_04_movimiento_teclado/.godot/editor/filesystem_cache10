@@ -1,0 +1,10 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790844440
+::res://assets/::1790842684
+CREDITOS.md::TextFile::-1::1790842542::0::1::::<><><>0<>0<><>::
+personaje_1.png::CompressedTexture2D::7965909308384592156::1790842542::1790842684::1::::<><><>0<>0<>701d112782332bd1082a2a4f80cdfb57<>res://.godot/imported/personaje_1.png-0a29a2ef37c79b5cbea3f3aa46d50113.ctex::
+personaje_2.png::CompressedTexture2D::3634317451286751043::1790842542::1790842684::1::::<><><>0<>0<>1fd4774d814fad47cb8cfba393581f87<>res://.godot/imported/personaje_2.png-ac6b7cfb57c8dbb22de2048112823d93.ctex::
+::res://escenas/::1790844383
+mundo.tscn::PackedScene::2673687614429770062::1790844383::0::1::::<><><>0<>0<><>::uid://dlq0mlayvpbnw::::res://assets/personaje_1.png<>uid://br1qxbegqxdb4::::res://assets/personaje_2.png<>uid://bwve4utv4yswh::::res://scripts/personaje.gd
+::res://scripts/::1790844383
+personaje.gd::GDScript::3974222913371525931::1790844383::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
