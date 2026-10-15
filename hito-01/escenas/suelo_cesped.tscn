@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cdlbwdp2oxj3f"]
+
+[ext_resource type="Texture2D" uid="uid://7hf643ecqn60" path="res://assets/kenney_new-platformer-pack-1.1/Vector/Tiles/terrain_grass_block_top.svg" id="1_c7q2s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2k6lk"]
+size = Vector2(64, 60)
+
+[node name="SueloCesped" type="StaticBody2D" unique_id=1028976618]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=538336706]
+texture = ExtResource("1_c7q2s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1729722627]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_2k6lk")

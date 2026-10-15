@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://ccwegvqyver1b"]
+
+[ext_resource type="Texture2D" uid="uid://c727y8hhxgiu6" path="res://assets/personaje_1.png" id="1_a2ps7"]
+[ext_resource type="Texture2D" uid="uid://8vmr264heox1" path="res://assets/personaje_2.png" id="2_0vka0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0m7wx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_a2ps7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0vka0")
+}],
+"loop": 1,
+"name": &"caminar",
+"speed": 5.0
+}]
+
+[node name="Mundo" type="Node2D" unique_id=672897494]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1566600967]
+position = Vector2(1000, 90)
+sprite_frames = SubResource("SpriteFrames_0m7wx")
+animation = &"caminar"

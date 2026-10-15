@@ -23,10 +23,6 @@ window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 window/stretch/scale_mode="integer"
 
-[global_group]
-
-monedas=""
-
 [input]
 
 mover_izquierda={

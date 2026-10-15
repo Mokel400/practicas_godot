@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://b6rrsaa0phowx"]
+
+[ext_resource type="Texture2D" uid="uid://dlutm12dwcvwm" path="res://assets/kenney_new-platformer-pack-1.1/Vector/Tiles/coin_gold.svg" id="1_16hu1"]
+[ext_resource type="PackedScene" uid="uid://p5xqqcb3051" path="res://escenas/suelo_cesped_doble.tscn" id="1_cdbbl"]
+[ext_resource type="PackedScene" uid="uid://cdlbwdp2oxj3f" path="res://escenas/suelo_cesped.tscn" id="2_16hu1"]
+[ext_resource type="Texture2D" uid="uid://bfmavpq3svtlo" path="res://assets/kenney_new-platformer-pack-1.1/Spritesheets/spritesheet-characters-default.png" id="2_glrvs"]
+[ext_resource type="Script" uid="uid://crx34iwn1pmqi" path="res://scripts/personaje.gd" id="2_v12yk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0m7wx"]
+radius = 20.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v12yk"]
+atlas = ExtResource("2_glrvs")
+region = Rect2(256, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16hu1"]
+atlas = ExtResource("2_glrvs")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7oex1"]
+atlas = ExtResource("2_glrvs")
+region = Rect2(384, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vydk"]
+atlas = ExtResource("2_glrvs")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txhqv"]
+atlas = ExtResource("2_glrvs")
+region = Rect2(640, 128, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ywsw1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v12yk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16hu1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7oex1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4vydk")
+}],
+"loop": 1,
+"name": &"caminar",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txhqv")
+}],
+"loop": 1,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ln5pw"]
+size = Vector2(37, 86)
+
+[node name="Mundo" type="Node2D" unique_id=336571601]
+
+[node name="Moneda" type="Area2D" parent="." unique_id=2054485244]
+
+[node name="Sprite2D" type="Sprite2D" parent="Moneda" unique_id=307882127]
+texture = ExtResource("1_16hu1")
+
+[node name="ColisionMoneda" type="CollisionShape2D" parent="Moneda" unique_id=1067375669]
+shape = SubResource("CircleShape2D_0m7wx")
+
+[node name="SueloCespedDoble" parent="." unique_id=1926223337 instance=ExtResource("1_cdbbl")]
+position = Vector2(128, 0)
+
+[node name="SueloCespedDoble2" parent="." unique_id=659519318 instance=ExtResource("1_cdbbl")]
+
+[node name="SueloCespedDoble3" parent="." unique_id=1160522927 instance=ExtResource("1_cdbbl")]
+position = Vector2(256, 0)
+
+[node name="SueloCespedDoble4" parent="." unique_id=1320471445 instance=ExtResource("1_cdbbl")]
+position = Vector2(384, 0)
+
+[node name="SueloCespedDoble5" parent="." unique_id=460530754 instance=ExtResource("1_cdbbl")]
+position = Vector2(640, 0)
+
+[node name="SueloCespedDoble6" parent="." unique_id=1781090948 instance=ExtResource("1_cdbbl")]
+position = Vector2(512, 0)
+
+[node name="SueloCespedDoble7" parent="." unique_id=849211381 instance=ExtResource("1_cdbbl")]
+position = Vector2(1022, 0)
+
+[node name="SueloCespedDoble8" parent="." unique_id=38506792 instance=ExtResource("1_cdbbl")]
+position = Vector2(895, 0)
+
+[node name="SueloCespedDoble9" parent="." unique_id=1478081856 instance=ExtResource("1_cdbbl")]
+position = Vector2(768, 0)
+
+[node name="SueloCesped" parent="." unique_id=1028976618 instance=ExtResource("2_16hu1")]
+position = Vector2(1182, 616)
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=1145446506]
+position = Vector2(40, 524)
+script = ExtResource("2_v12yk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Personaje" unique_id=1205029571]
+sprite_frames = SubResource("SpriteFrames_ywsw1")
+animation = &"caminar"
+autoplay = "quieto"
+
+[node name="Colision" type="CollisionShape2D" parent="Personaje" unique_id=559309418]
+position = Vector2(-0.5, 18)
+shape = SubResource("RectangleShape2D_ln5pw")

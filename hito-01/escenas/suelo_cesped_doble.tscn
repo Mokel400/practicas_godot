@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://p5xqqcb3051"]
+
+[ext_resource type="PackedScene" uid="uid://cdlbwdp2oxj3f" path="res://escenas/suelo_cesped.tscn" id="1_5akje"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0m7wx"]
+size = Vector2(128, 60)
+
+[node name="SueloCespedDoble" type="StaticBody2D" unique_id=1926223337]
+
+[node name="SueloCesped" parent="." unique_id=1028976618 instance=ExtResource("1_5akje")]
+position = Vector2(32, 616)
+
+[node name="SueloCesped2" parent="." unique_id=445891879 instance=ExtResource("1_5akje")]
+position = Vector2(96, 616)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1853462922]
+position = Vector2(64, 618)
+shape = SubResource("RectangleShape2D_0m7wx")

@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://d1aj2obdo0qpl"]
+
+[ext_resource type="Script" uid="uid://c6k1k8ss75slp" path="res://scripts/mundo.gd" id="1_16hu1"]
+[ext_resource type="Script" uid="uid://bb6kokwhrogl5" path="res://scripts/personaje.gd" id="1_v12yk"]
+[ext_resource type="PackedScene" uid="uid://77fhod68gots" path="res://escenas/caja.tscn" id="2_7oex1"]
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="2_16hu1"]
+[ext_resource type="PackedScene" path="res://escenas/moneda.tscn" id="4_7oex1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40a7a"]
+size = Vector2(16, 20)
+
+[node name="Mundo" type="Node2D" unique_id=1952267439]
+script = ExtResource("1_16hu1")
+
+[node name="Caja18" parent="." unique_id=1737954900 instance=ExtResource("2_7oex1")]
+position = Vector2(148, 170)
+
+[node name="Caja19" parent="." unique_id=592713611 instance=ExtResource("2_7oex1")]
+position = Vector2(166, 170)
+
+[node name="Caja20" parent="." unique_id=1229950706 instance=ExtResource("2_7oex1")]
+position = Vector2(112, 170)
+
+[node name="Caja21" parent="." unique_id=668092051 instance=ExtResource("2_7oex1")]
+position = Vector2(130, 170)
+
+[node name="Caja22" parent="." unique_id=1081528373 instance=ExtResource("2_7oex1")]
+position = Vector2(23, 170)
+
+[node name="Caja23" parent="." unique_id=1050548212 instance=ExtResource("2_7oex1")]
+position = Vector2(40, 170)
+
+[node name="Caja24" parent="." unique_id=556433858 instance=ExtResource("2_7oex1")]
+position = Vector2(58, 170)
+
+[node name="Caja25" parent="." unique_id=507419716 instance=ExtResource("2_7oex1")]
+position = Vector2(76, 170)
+
+[node name="Caja26" parent="." unique_id=1862497175 instance=ExtResource("2_7oex1")]
+position = Vector2(94, 170)
+
+[node name="Caja27" parent="." unique_id=1583578600 instance=ExtResource("2_7oex1")]
+position = Vector2(184, 170)
+
+[node name="Caja28" parent="." unique_id=1213311050 instance=ExtResource("2_7oex1")]
+position = Vector2(202, 170)
+
+[node name="Caja29" parent="." unique_id=1621905108 instance=ExtResource("2_7oex1")]
+position = Vector2(220, 170)
+
+[node name="Caja30" parent="." unique_id=1918463946 instance=ExtResource("2_7oex1")]
+position = Vector2(239, 170)
+
+[node name="Caja31" parent="." unique_id=1838103988 instance=ExtResource("2_7oex1")]
+position = Vector2(257, 170)
+
+[node name="Caja32" parent="." unique_id=656948585 instance=ExtResource("2_7oex1")]
+position = Vector2(275, 170)
+
+[node name="Caja33" parent="." unique_id=196835908 instance=ExtResource("2_7oex1")]
+position = Vector2(293, 170)
+
+[node name="Caja34" parent="." unique_id=163389235 instance=ExtResource("2_7oex1")]
+position = Vector2(312, 170)
+
+[node name="Caja2" parent="." unique_id=1831684338 instance=ExtResource("2_7oex1")]
+position = Vector2(148, 9)
+
+[node name="Caja3" parent="." unique_id=361474602 instance=ExtResource("2_7oex1")]
+position = Vector2(166, 9)
+
+[node name="Caja4" parent="." unique_id=1898135155 instance=ExtResource("2_7oex1")]
+position = Vector2(112, 9)
+
+[node name="Caja" parent="." unique_id=386139821 instance=ExtResource("2_7oex1")]
+position = Vector2(130, 9)
+
+[node name="Caja5" parent="." unique_id=1824650725 instance=ExtResource("2_7oex1")]
+position = Vector2(23, 9)
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=73838861]
+position = Vector2(160, 90)
+script = ExtResource("1_v12yk")
+
+[node name="Imagen" type="Sprite2D" parent="Personaje" unique_id=1343887121]
+texture = ExtResource("2_16hu1")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Personaje" unique_id=1639277092]
+shape = SubResource("RectangleShape2D_40a7a")
+
+[node name="Moneda" parent="." unique_id=2048065985 instance=ExtResource("4_7oex1")]
+position = Vector2(60, 50)
+
+[node name="Moneda2" parent="." unique_id=465295231 instance=ExtResource("4_7oex1")]
+position = Vector2(230, 60)
+
+[node name="Moneda3" parent="." unique_id=455431534 instance=ExtResource("4_7oex1")]
+position = Vector2(150, 140)
+
+[node name="Interfaz" type="CanvasLayer" parent="." unique_id=749434465]
+
+[node name="Puntos" type="Label" parent="Interfaz" unique_id=1491781463]
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 4.0
+text = "Puntos: 0"
+
+[node name="Caja6" parent="." unique_id=2109041447 instance=ExtResource("2_7oex1")]
+position = Vector2(40, 9)
+
+[node name="Caja7" parent="." unique_id=1716042669 instance=ExtResource("2_7oex1")]
+position = Vector2(58, 9)
+
+[node name="Caja8" parent="." unique_id=703138001 instance=ExtResource("2_7oex1")]
+position = Vector2(76, 9)
+
+[node name="Caja9" parent="." unique_id=360517887 instance=ExtResource("2_7oex1")]
+position = Vector2(94, 9)
+
+[node name="Caja10" parent="." unique_id=1002757150 instance=ExtResource("2_7oex1")]
+position = Vector2(184, 9)
+
+[node name="Caja11" parent="." unique_id=1755192029 instance=ExtResource("2_7oex1")]
+position = Vector2(202, 9)
+
+[node name="Caja12" parent="." unique_id=1094611021 instance=ExtResource("2_7oex1")]
+position = Vector2(220, 9)
+
+[node name="Caja13" parent="." unique_id=147188952 instance=ExtResource("2_7oex1")]
+position = Vector2(239, 9)
+
+[node name="Caja14" parent="." unique_id=1290238815 instance=ExtResource("2_7oex1")]
+position = Vector2(257, 9)
+
+[node name="Caja15" parent="." unique_id=1171821880 instance=ExtResource("2_7oex1")]
+position = Vector2(275, 9)
+
+[node name="Caja16" parent="." unique_id=693603025 instance=ExtResource("2_7oex1")]
+position = Vector2(293, 9)
+
+[node name="Caja17" parent="." unique_id=105571946 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 9)
+
+[node name="Caja35" parent="." unique_id=969755512 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 133)
+
+[node name="Caja36" parent="." unique_id=1785782549 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 115)
+
+[node name="Caja37" parent="." unique_id=2080911141 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 99)
+
+[node name="Caja38" parent="." unique_id=16074750 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 81)
+
+[node name="Caja39" parent="." unique_id=729250170 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 63)
+
+[node name="Caja40" parent="." unique_id=1041279398 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 45)
+
+[node name="Caja41" parent="." unique_id=1475464068 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 27)
+
+[node name="Caja43" parent="." unique_id=498726712 instance=ExtResource("2_7oex1")]
+position = Vector2(311, 150)
+
+[node name="Caja42" parent="." unique_id=313701354 instance=ExtResource("2_7oex1")]
+position = Vector2(9, 134)
+
+[node name="Caja44" parent="." unique_id=1916236094 instance=ExtResource("2_7oex1")]
+position = Vector2(9, 116)
+
+[node name="Caja45" parent="." unique_id=2065386766 instance=ExtResource("2_7oex1")]
+position = Vector2(9, 100)
+
+[node name="Caja46" parent="." unique_id=1235062080 instance=ExtResource("2_7oex1")]
+position = Vector2(9, 82)
+
+[node name="Caja47" parent="." unique_id=1558242297 instance=ExtResource("2_7oex1")]
+position = Vector2(9, 64)
+
+[node name="Caja48" parent="." unique_id=645626950 instance=ExtResource("2_7oex1")]
+position = Vector2(9, 46)
+
+[node name="Caja49" parent="." unique_id=889010360 instance=ExtResource("2_7oex1")]
+position = Vector2(9, 28)
+
+[node name="Caja50" parent="." unique_id=772268877 instance=ExtResource("2_7oex1")]
+position = Vector2(9, 151)
+
+[node name="CajaFantasma" parent="." unique_id=275129180 instance=ExtResource("2_7oex1")]
+position = Vector2(72, 130)
+collision_layer = 2
+
+[connection signal="recogida" from="Moneda" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda2" to="." method="_on_moneda_recogida"]
+[connection signal="recogida" from="Moneda3" to="." method="_on_moneda_recogida"]

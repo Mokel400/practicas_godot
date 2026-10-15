@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://77fhod68gots"]
+
+[ext_resource type="Texture2D" uid="uid://csum4t35kgx4n" path="res://assets/caja.png" id="1_hv7ok"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hv7ok"]
+size = Vector2(18, 18)
+
+[node name="Caja" type="StaticBody2D" unique_id=1737954900]
+
+[node name="FormaColision" type="CollisionShape2D" parent="." unique_id=248985365]
+shape = SubResource("RectangleShape2D_hv7ok")
+
+[node name="ImagenCaja" type="Sprite2D" parent="." unique_id=1336237539]
+texture = ExtResource("1_hv7ok")
