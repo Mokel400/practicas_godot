@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dqaoik5njb7xg"]
+
+[ext_resource type="Script" uid="uid://dgxns4577ruac" path="res://scripts/moneda.gd" id="1_ponsd"]
+[ext_resource type="Texture2D" uid="uid://dlutm12dwcvwm" path="res://assets/kenney_new-platformer-pack-1.1/Vector/Tiles/coin_gold.svg" id="2_tr4to"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0m7wx"]
+radius = 25.079872
+
+[node name="Moneda" type="Area2D" unique_id=324332093]
+script = ExtResource("1_ponsd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1931471071]
+position = Vector2(210, 126)
+texture = ExtResource("2_tr4to")
+
+[node name="ColisionMoneda" type="CollisionShape2D" parent="." unique_id=139988646]
+position = Vector2(210, 126)
+shape = SubResource("CircleShape2D_0m7wx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

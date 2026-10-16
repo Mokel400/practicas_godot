@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cldw5k7owuu1y"]
+
+[ext_resource type="Texture2D" uid="uid://mglvlruoemvy" path="res://assets/kenney_new-platformer-pack-1.1/Vector/Tiles/bridge.svg" id="1_28twi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0m7wx"]
+size = Vector2(62, 33)
+
+[node name="Puente" type="StaticBody2D" unique_id=810956610]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=963820688]
+position = Vector2(0, -15.5)
+shape = SubResource("RectangleShape2D_0m7wx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=433930544]
+texture = ExtResource("1_28twi")
