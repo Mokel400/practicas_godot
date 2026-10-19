@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bfmavpq3svtlo" path="res://assets/kenney_new-platformer-pack-1.1/Spritesheets/spritesheet-characters-default.png" id="2_glrvs"]
 [ext_resource type="Script" uid="uid://crx34iwn1pmqi" path="res://scripts/personaje.gd" id="2_v12yk"]
 [ext_resource type="PackedScene" uid="uid://cldw5k7owuu1y" path="res://escenas/Puente.tscn" id="6_7oex1"]
+[ext_resource type="Texture2D" uid="uid://bvs0cmu2demnf" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_color_trees.png" id="8_txhqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v12yk"]
 atlas = ExtResource("2_glrvs")
@@ -109,25 +110,25 @@ position = Vector2(883, 491)
 [node name="Puente6" parent="." unique_id=1308051256 instance=ExtResource("6_7oex1")]
 position = Vector2(759, 491)
 
-[node name="Moneda" parent="." unique_id=324332093 instance=ExtResource("1_16hu1")]
+[node name="Moneda" parent="." unique_id=324332093 groups=["Monedas"] instance=ExtResource("1_16hu1")]
 position = Vector2(73, 279)
 
-[node name="Moneda2" parent="." unique_id=1474436397 instance=ExtResource("1_16hu1")]
+[node name="Moneda2" parent="." unique_id=1474436397 groups=["Monedas"] instance=ExtResource("1_16hu1")]
 position = Vector2(142, 279)
 
-[node name="Moneda3" parent="." unique_id=1983158490 instance=ExtResource("1_16hu1")]
+[node name="Moneda3" parent="." unique_id=1983158490 groups=["Monedas"] instance=ExtResource("1_16hu1")]
 position = Vector2(107, 427)
 
-[node name="Moneda4" parent="." unique_id=866825162 instance=ExtResource("1_16hu1")]
+[node name="Moneda4" parent="." unique_id=866825162 groups=["Monedas"] instance=ExtResource("1_16hu1")]
 position = Vector2(379, 223)
 
-[node name="Moneda5" parent="." unique_id=937565662 instance=ExtResource("1_16hu1")]
+[node name="Moneda5" parent="." unique_id=937565662 groups=["Monedas"] instance=ExtResource("1_16hu1")]
 position = Vector2(605, 425)
 
-[node name="Moneda6" parent="." unique_id=1657018432 instance=ExtResource("1_16hu1")]
+[node name="Moneda6" parent="." unique_id=1657018432 groups=["Monedas"] instance=ExtResource("1_16hu1")]
 position = Vector2(643, 290)
 
-[node name="Moneda7" parent="." unique_id=229462242 instance=ExtResource("1_16hu1")]
+[node name="Moneda7" parent="." unique_id=229462242 groups=["Monedas"] instance=ExtResource("1_16hu1")]
 position = Vector2(580, 288)
 
 [node name="Personaje" type="CharacterBody2D" parent="." unique_id=1145446506]
@@ -148,7 +149,14 @@ shape = SubResource("RectangleShape2D_ln5pw")
 [node name="Puntos" type="Label" parent="Interfaz" unique_id=1220418410]
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Puntos: 0"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=851708452]
+z_index = -1
+position = Vector2(575.99994, 323.75)
+scale = Vector2(4.4999995, 2.5253906)
+texture = ExtResource("8_txhqv")
 
 [connection signal="recogida" from="Moneda" to="." method="_on_moneda_recogida"]
 [connection signal="recogida" from="Moneda2" to="." method="_on_moneda_recogida"]

@@ -12,5 +12,8 @@ func _on_moneda_recogida() -> void:
 	actualizar_marcador()
 	
 func actualizar_marcador() -> void:
-	marcador.text = "Puntos: " + str(puntos)
+	if(get_tree().get_nodes_in_group("Monedas").size() == 1):
+		marcador.text = "GENIO!!!!"
+	else:
+		marcador.text = "Puntos: " + str(puntos)
 	
