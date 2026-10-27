@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://djycqolkada5x"]
+
+[ext_resource type="Texture2D" uid="uid://c2s2edpywe5ew" path="res://assets/personaje_1.png" id="1_v0a8y"]
+[ext_resource type="Texture2D" uid="uid://c2unfrni7r6aw" path="res://assets/personaje_azul.png" id="2_mf1lf"]
+
+[node name="Juego" type="Node2D" unique_id=235156923]
+
+[node name="PersonajeVerde" type="Sprite2D" parent="." unique_id=887257014]
+position = Vector2(130, 90)
+texture = ExtResource("1_v0a8y")
+
+[node name="PersonajeAzul" type="Sprite2D" parent="." unique_id=696099663]
+position = Vector2(190, 90)
+texture = ExtResource("2_mf1lf")

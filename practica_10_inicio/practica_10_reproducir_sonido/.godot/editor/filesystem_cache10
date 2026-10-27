@@ -1,0 +1,11 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792654139
+::res://assets/::1792657561
+boton.ogg::AudioStreamOggVorbis::1809646465508749793::1792653573::1792654140::1::::<><><>0<>0<>804e629d898945289a6af21a4a51fd0b<>res://.godot/imported/boton.ogg-a9b9f1776abc7e373d81551eda663f6c.oggvorbisstr::
+CREDITOS.md::TextFile::-1::1792653573::0::1::::<><><>0<>0<><>::
+question_002.ogg::AudioStreamOggVorbis::5689448230497304217::1792656694::1792656720::1::::<><><>0<>0<>60dd61eff17cde17a711ce6138964a8f<>res://.godot/imported/question_002.ogg-e7d1d028da4dc27750b3f43d396a0c6f.oggvorbisstr::
+rizz-sound-effect.mp3::AudioStreamMP3::2197205337367501173::1792657529::1792657563::1::::<><><>0<>0<>fd9bbecb2c94d74b95445099ada27816<>res://.godot/imported/rizz-sound-effect.mp3-07914aff5a0b551a37ae7927d37e49ac.mp3str::
+::res://escenas/::1792657156
+pantalla.tscn::PackedScene::2073627837297162634::1792657156::0::1::::<><><>0<>0<><>::uid://ckbvlekk4kgms::::res://scripts/pantalla.gd<>uid://cncam7tpbi23f::::res://assets/question_002.ogg<>uid://01uu3rgxdlx6::::res://assets/boton.ogg
+::res://scripts/::1792657111
+pantalla.gd::GDScript::5478089108136588450::1792657111::0::1::::<>Control<><>0<>0<><>::

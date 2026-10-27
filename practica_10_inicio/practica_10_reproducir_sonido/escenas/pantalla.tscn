@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://4sql2y51jh7g"]
+
+[ext_resource type="Script" uid="uid://ckbvlekk4kgms" path="res://scripts/pantalla.gd" id="1_svblx"]
+[ext_resource type="AudioStream" uid="uid://6klweouyc84h" path="res://assets/rizz-sound-effect.mp3" id="2_3dumk"]
+[ext_resource type="AudioStream" uid="uid://01uu3rgxdlx6" path="res://assets/boton.ogg" id="2_111jw"]
+
+[node name="Pantalla" type="Control" unique_id=62029359]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -19.0
+offset_right = -3.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_svblx")
+
+[node name="Boton" type="Button" parent="." unique_id=1876803607]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 78.0
+offset_right = 125.0
+offset_bottom = 111.0
+text = "Boton 1
+"
+
+[node name="Reproductor" type="AudioStreamPlayer2D" parent="Boton" unique_id=1214592001]
+stream = ExtResource("2_3dumk")
+
+[node name="Boton2" type="Button" parent="." unique_id=475947468]
+layout_mode = 0
+offset_left = 194.0
+offset_top = 74.0
+offset_right = 262.0
+offset_bottom = 105.0
+text = "Boton 2"
+
+[node name="Reproductor2" type="AudioStreamPlayer2D" parent="Boton2" unique_id=1403993485]
+stream = ExtResource("2_111jw")
+
+[connection signal="pressed" from="Boton" to="." method="_on_boton_pressed"]
+[connection signal="pressed" from="Boton2" to="." method="_on_boton_2_pressed"]
