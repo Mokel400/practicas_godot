@@ -1,12 +1,12 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1793087074
+::res://::1793348126
 ::res://assets/::1792658157
 boton.ogg::AudioStreamOggVorbis::1256106836860917600::1792657976::1792658157::1::::<><><>0<>0<>f50de4b5975002dfab4ffbea63cc7a4f<>res://.godot/imported/boton.ogg-a9b9f1776abc7e373d81551eda663f6c.oggvorbisstr::
 CREDITOS.md::TextFile::-1::1792657976::0::1::::<><><>0<>0<><>::
 personaje_1.png::CompressedTexture2D::6706745629028624854::1792657976::1792658157::1::::<><><>0<>0<>1da4785d6f3c0a86f99c600994ebfa9d<>res://.godot/imported/personaje_1.png-0a29a2ef37c79b5cbea3f3aa46d50113.ctex::
 personaje_azul.png::CompressedTexture2D::6710026863956120538::1792657976::1792658157::1::::<><><>0<>0<>bb07ccd8109fd57b598b91f53a53ad41<>res://.godot/imported/personaje_azul.png-b7a56a267b75bfa8c04ee289c670a494.ctex::
-::res://escenas/::1792669461
+::res://escenas/::1793087323
 juego.tscn::PackedScene::7840657469381264299::1792669461::0::1::::<><><>0<>0<><>::uid://c2s2edpywe5ew::::res://assets/personaje_1.png<>uid://c2unfrni7r6aw::::res://assets/personaje_azul.png
-menu.tscn::PackedScene::1292006486942333464::1792659603::0::1::::<><><>0<>0<><>::uid://o1mg8fc52xvb::::res://scripts/menu.gd
-::res://scripts/::1792659580
-menu.gd::GDScript::1037058692341260767::1792659580::0::1::::<>Control<><>0<>0<><>::
+menu.tscn::PackedScene::1292006486942333464::1793087323::0::1::::<><><>0<>0<><>::uid://o1mg8fc52xvb::::res://scripts/menu.gd
+::res://scripts/::1793087323
+menu.gd::GDScript::1037058692341260767::1793087323::0::1::::<>Control<><>0<>0<><>::

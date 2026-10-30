@@ -8,7 +8,7 @@ const JUMP_VELOCITY = -400.0
 func _physics_process(delta: float) -> void:
 	#Correr
 	if Input.is_action_just_pressed("correr"):
-		SPEED == 10000.0
+		SPEED == 300.0
 	
 	#Aplicar gravedad
 	if not is_on_floor():

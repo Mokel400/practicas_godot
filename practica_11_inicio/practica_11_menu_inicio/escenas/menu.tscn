@@ -30,4 +30,9 @@ text = "EL RECOLECTOR"
 layout_mode = 2
 text = "JUGAR"
 
+[node name="BotonSalir" type="Button" parent="Centro/Caja" unique_id=1070684971]
+layout_mode = 2
+text = "Salir"
+
 [connection signal="pressed" from="Centro/Caja/BotonJugar" to="." method="_on_boton_jugar_pressed"]
+[connection signal="pressed" from="Centro/Caja/BotonSalir" to="." method="_on_boton_salir_pressed"]

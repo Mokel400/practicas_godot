@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ba5qjbnvc3vqa"]
+
+[ext_resource type="Script" uid="uid://x3pp1q6fou6o" path="res://scripts/nave.gd" id="1_6wjgb"]
+[ext_resource type="Texture2D" uid="uid://bof120wixsq01" path="res://assets/nave.png" id="2_glrvs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0m7wx"]
+radius = 6.0
+
+[node name="Mundo" type="Node2D" unique_id=408523964]
+
+[node name="Nave" type="CharacterBody2D" parent="." unique_id=24072369]
+position = Vector2(60, 15)
+script = ExtResource("1_6wjgb")
+
+[node name="Imagen" type="Sprite2D" parent="Nave" unique_id=1188136626]
+texture = ExtResource("2_glrvs")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Nave" unique_id=1811537934]
+shape = SubResource("CircleShape2D_0m7wx")
