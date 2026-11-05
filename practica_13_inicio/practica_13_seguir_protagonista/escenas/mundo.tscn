@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dbtgp2ow46ggu"]
+
+[ext_resource type="Script" uid="uid://bb6kokwhrogl5" path="res://scripts/personaje.gd" id="1_6wjgb"]
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="2_glrvs"]
+[ext_resource type="PackedScene" uid="uid://cgqdvqu4ok5ou" path="res://escenas/enemigo.tscn" id="3_glrvs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40a7a"]
+size = Vector2(16, 20)
+
+[node name="Mundo" type="Node2D" unique_id=1952267439]
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=73838861]
+position = Vector2(160, 90)
+script = ExtResource("1_6wjgb")
+
+[node name="Imagen" type="Sprite2D" parent="Personaje" unique_id=1343887121]
+texture = ExtResource("2_glrvs")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Personaje" unique_id=1639277092]
+shape = SubResource("RectangleShape2D_40a7a")
+
+[node name="Enemigo" parent="." unique_id=558318974 node_paths=PackedStringArray("objetivo") instance=ExtResource("3_glrvs")]
+position = Vector2(40, 40)
+objetivo = NodePath("../Personaje")
+velocidad = 50.0
+
+[node name="Enemigo2" parent="." unique_id=1992553050 node_paths=PackedStringArray("objetivo") instance=ExtResource("3_glrvs")]
+position = Vector2(70, 105)
+objetivo = NodePath("../Personaje")
+velocidad = 40.0
+
+[node name="Enemigo3" parent="." unique_id=1566806427 node_paths=PackedStringArray("objetivo") instance=ExtResource("3_glrvs")]
+position = Vector2(108, 22)
+objetivo = NodePath("../Personaje")
+velocidad = 60.0

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bo7xfrtabll8i"]
+
+[ext_resource type="Script" uid="uid://dg7n50d3k2oy2" path="res://scripts/proyectil.gd" id="1_y2gxt"]
+[ext_resource type="Texture2D" uid="uid://b24mcgkla5epd" path="res://assets/nave.png" id="2_y2gxt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0m7wx"]
+radius = 8.0
+
+[node name="Proyectil" type="Area2D" unique_id=2025900042]
+script = ExtResource("1_y2gxt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1478850934]
+texture = ExtResource("2_y2gxt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1759523691]
+shape = SubResource("CircleShape2D_0m7wx")
+
+[node name="AvisoPantalla" type="VisibleOnScreenNotifier2D" parent="." unique_id=612286298]
+
+[connection signal="screen_exited" from="AvisoPantalla" to="." method="_on_screen_exited"]

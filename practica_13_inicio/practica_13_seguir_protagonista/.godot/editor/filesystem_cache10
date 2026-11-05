@@ -1,0 +1,15 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1793866581
+::res://assets/::1793353576
+CREDITOS.md::TextFile::-1::1793353513::0::1::::<><><>0<>0<><>::
+murcielago_1.png::CompressedTexture2D::3496341011393819691::1793353513::1793353576::1::::<><><>0<>0<>f1fc124024ca58d802e28e39631c0660<>res://.godot/imported/murcielago_1.png-eada5becf08478f71c5b2b3b7f95aaf3.ctex::
+murcielago_2.png::CompressedTexture2D::7357441830051489363::1793353513::1793353576::1::::<><><>0<>0<>5d517febb544ecfef03711f07370432c<>res://.godot/imported/murcielago_2.png-f026c1bd76d583f1fc32e5dda96fd654.ctex::
+murcielago_3.png::CompressedTexture2D::8993920224771818266::1793353513::1793353576::1::::<><><>0<>0<>790123c0fca0e9371ce749c51c6b19d2<>res://.godot/imported/murcielago_3.png-969cceafaa0100bac7ce42785b6c0071.ctex::
+personaje_1.png::CompressedTexture2D::7965909308384592156::1793353513::1793353576::1::::<><><>0<>0<>701d112782332bd1082a2a4f80cdfb57<>res://.godot/imported/personaje_1.png-0a29a2ef37c79b5cbea3f3aa46d50113.ctex::
+personaje_2.png::CompressedTexture2D::3634317451286751043::1793353513::1793353576::1::::<><><>0<>0<>1fd4774d814fad47cb8cfba393581f87<>res://.godot/imported/personaje_2.png-ac6b7cfb57c8dbb22de2048112823d93.ctex::
+::res://escenas/::1793358815
+enemigo.tscn::PackedScene::5227224998536109880::1793357984::0::1::::<><><>0<>0<><>::uid://brka3n6lb3kgv::::res://scripts/enemigo.gd<>uid://bp2whw3nkemtv::::res://assets/murcielago_1.png<>uid://dc288y01k4mtv::::res://assets/murcielago_2.png<>uid://d1eys1gydjgte::::res://assets/murcielago_3.png
+mundo.tscn::PackedScene::7269066601706917888::1793358815::0::1::::<><><>0<>0<><>::uid://bb6kokwhrogl5::::res://scripts/personaje.gd<>uid://dlq0mlayvpbnw::::res://assets/personaje_1.png<>uid://cgqdvqu4ok5ou::::res://escenas/enemigo.tscn
+::res://scripts/::1793358815
+enemigo.gd::GDScript::3600325536504313497::1793358815::0::1::::<>CharacterBody2D<><>0<>0<><>::
+personaje.gd::GDScript::2521237968309841548::1793353513::0::1::::<>CharacterBody2D<><>0<>0<><>::

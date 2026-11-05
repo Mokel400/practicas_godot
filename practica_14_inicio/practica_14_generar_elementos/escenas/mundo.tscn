@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b4dyrhdbujxfb"]
+
+[ext_resource type="Script" uid="uid://c7tx0wtyvnlpd" path="res://scripts/mundo.gd" id="1_16hu1"]
+[ext_resource type="Script" uid="uid://bb6kokwhrogl5" path="res://scripts/personaje.gd" id="1_v12yk"]
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="2_16hu1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40a7a"]
+size = Vector2(16, 20)
+
+[node name="Mundo" type="Node2D" unique_id=1952267439]
+script = ExtResource("1_16hu1")
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=73838861]
+position = Vector2(160, 90)
+script = ExtResource("1_v12yk")
+
+[node name="Imagen" type="Sprite2D" parent="Personaje" unique_id=1343887121]
+texture = ExtResource("2_16hu1")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Personaje" unique_id=1639277092]
+shape = SubResource("RectangleShape2D_40a7a")
+
+[node name="Interfaz" type="CanvasLayer" parent="." unique_id=749434465]
+
+[node name="Puntos" type="Label" parent="Interfaz" unique_id=1491781463]
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 4.0
+text = "Puntos: 0"
+
+[node name="Temporizador" type="Timer" parent="." unique_id=1086147140]
+wait_time = 1.5
+autostart = true
+
+[connection signal="timeout" from="Temporizador" to="." method="_on_temporizador_timeout"]
