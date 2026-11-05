@@ -1,0 +1,12 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1793873782
+::res://assets/::1793873732
+CREDITOS.md::TextFile::-1::1793873732::0::1::::<><><>0<>0<><>::
+personaje_1.png::CompressedTexture2D::5819218599565129614::1793873732::1793873783::1::::<><><>0<>0<>7f5537a9b4213a1a63759d6c147fb712<>res://.godot/imported/personaje_1.png-0a29a2ef37c79b5cbea3f3aa46d50113.ctex::
+personaje_2.png::CompressedTexture2D::1184536070182413428::1793873732::1793873783::1::::<><><>0<>0<>6b623a6d8ec3ca7c72f1d7683cc4597c<>res://.godot/imported/personaje_2.png-ac6b7cfb57c8dbb22de2048112823d93.ctex::
+plataforma.png::CompressedTexture2D::6034342126888403550::1793873732::1793873783::1::::<><><>0<>0<>a263b1814db495264de5b1f2ced6b833<>res://.godot/imported/plataforma.png-1bb67e9f2a8c03c64d6b2e7968d3c266.ctex::
+suelo.png::CompressedTexture2D::7018856409258510694::1793873732::1793873783::1::::<><><>0<>0<>47d872aa37b30fe74e72b0ff26e8f699<>res://.godot/imported/suelo.png-abacc712d9e9d599f98394705b5c9aca.ctex::
+::res://escenas/::1793873732
+bloque.tscn::PackedScene::-1::1793873732::0::1::::<><><>0<>0<><>::res://assets/suelo.png
+mundo.tscn::PackedScene::-1::1793873732::0::1::::<><><>0<>0<><>::res://escenas/bloque.tscn
+::res://scripts/::1789191690

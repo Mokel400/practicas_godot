@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://c7cdp76eidtgf"]
+
+[ext_resource type="PackedScene" path="res://escenas/bloque.tscn" id="1_cdbbl"]
+[ext_resource type="Script" uid="uid://k53fwnv8idgh" path="res://scripts/personaje.gd" id="2_glrvs"]
+[ext_resource type="Texture2D" uid="uid://co54xeicx5qug" path="res://assets/personaje_1.png" id="3_v12yk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ywsw1"]
+size = Vector2(16, 20)
+
+[node name="Mundo" type="Node2D" unique_id=1630507817]
+
+[node name="Suelo1" parent="." unique_id=1819131647 instance=ExtResource("1_cdbbl")]
+position = Vector2(9, 171)
+
+[node name="Suelo2" parent="." unique_id=907170413 instance=ExtResource("1_cdbbl")]
+position = Vector2(27, 171)
+
+[node name="Suelo3" parent="." unique_id=1548827553 instance=ExtResource("1_cdbbl")]
+position = Vector2(45, 171)
+
+[node name="Suelo4" parent="." unique_id=264407819 instance=ExtResource("1_cdbbl")]
+position = Vector2(63, 171)
+
+[node name="Suelo5" parent="." unique_id=2023541297 instance=ExtResource("1_cdbbl")]
+position = Vector2(81, 171)
+
+[node name="Suelo6" parent="." unique_id=2040988897 instance=ExtResource("1_cdbbl")]
+position = Vector2(99, 171)
+
+[node name="Suelo7" parent="." unique_id=159068905 instance=ExtResource("1_cdbbl")]
+position = Vector2(117, 171)
+
+[node name="Suelo8" parent="." unique_id=303494565 instance=ExtResource("1_cdbbl")]
+position = Vector2(135, 171)
+
+[node name="Suelo9" parent="." unique_id=136315820 instance=ExtResource("1_cdbbl")]
+position = Vector2(153, 171)
+
+[node name="Suelo10" parent="." unique_id=684093320 instance=ExtResource("1_cdbbl")]
+position = Vector2(171, 171)
+
+[node name="Suelo11" parent="." unique_id=1169734509 instance=ExtResource("1_cdbbl")]
+position = Vector2(189, 171)
+
+[node name="Suelo12" parent="." unique_id=2079245578 instance=ExtResource("1_cdbbl")]
+position = Vector2(207, 171)
+
+[node name="Suelo13" parent="." unique_id=1658231097 instance=ExtResource("1_cdbbl")]
+position = Vector2(225, 171)
+
+[node name="Suelo14" parent="." unique_id=355594324 instance=ExtResource("1_cdbbl")]
+position = Vector2(243, 171)
+
+[node name="Suelo15" parent="." unique_id=845648621 instance=ExtResource("1_cdbbl")]
+position = Vector2(261, 171)
+
+[node name="Suelo16" parent="." unique_id=1719266137 instance=ExtResource("1_cdbbl")]
+position = Vector2(279, 171)
+
+[node name="Suelo17" parent="." unique_id=1419509454 instance=ExtResource("1_cdbbl")]
+position = Vector2(297, 171)
+
+[node name="Suelo18" parent="." unique_id=704106252 instance=ExtResource("1_cdbbl")]
+position = Vector2(315, 171)
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=820511163]
+position = Vector2(160, 60)
+script = ExtResource("2_glrvs")
+
+[node name="Imagen" type="Sprite2D" parent="Personaje" unique_id=2003693341]
+texture = ExtResource("3_v12yk")
+
+[node name="ColisionPersonaje" type="CollisionShape2D" parent="Personaje" unique_id=750033915]
+shape = SubResource("RectangleShape2D_ywsw1")
