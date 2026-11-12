@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://bb1ak6hkgi68g"]
+
+[ext_resource type="PackedScene" path="res://escenas/bloque.tscn" id="1_cdbbl"]
+[ext_resource type="Script" uid="uid://dtxwsosw0r4p4" path="res://scripts/personaje.gd" id="1_glrvs"]
+[ext_resource type="Texture2D" uid="uid://co54xeicx5qug" path="res://assets/personaje_1.png" id="2_v12yk"]
+[ext_resource type="Texture2D" uid="uid://q42evh4df10c" path="res://assets/personaje_2.png" id="3_16hu1"]
+[ext_resource type="PackedScene" path="res://escenas/plataforma.tscn" id="4_v12yk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_16hu1"]
+size = Vector2(16, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0m7wx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_16hu1")
+}],
+"loop": 1,
+"name": &"caer",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v12yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_16hu1")
+}],
+"loop": 1,
+"name": &"caminar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v12yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_16hu1")
+}],
+"loop": 1,
+"name": &"correr",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v12yk")
+}],
+"loop": 1,
+"name": &"quieto",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v12yk")
+}],
+"loop": 1,
+"name": &"saltar",
+"speed": 5.0
+}]
+
+[node name="Mundo" type="Node2D" unique_id=1630507817]
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=1086782553]
+position = Vector2(160, 60)
+script = ExtResource("1_glrvs")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Personaje" unique_id=1969905187]
+shape = SubResource("RectangleShape2D_16hu1")
+
+[node name="Imagen" type="AnimatedSprite2D" parent="Personaje" unique_id=2051033481]
+sprite_frames = SubResource("SpriteFrames_0m7wx")
+animation = &"correr"
+autoplay = "quieto"
+
+[node name="Suelo1" parent="." unique_id=1819131647 instance=ExtResource("1_cdbbl")]
+position = Vector2(9, 171)
+
+[node name="Suelo2" parent="." unique_id=907170413 instance=ExtResource("1_cdbbl")]
+position = Vector2(27, 171)
+
+[node name="Suelo3" parent="." unique_id=1548827553 instance=ExtResource("1_cdbbl")]
+position = Vector2(45, 171)
+
+[node name="Suelo4" parent="." unique_id=264407819 instance=ExtResource("1_cdbbl")]
+position = Vector2(63, 171)
+
+[node name="Suelo5" parent="." unique_id=2023541297 instance=ExtResource("1_cdbbl")]
+position = Vector2(81, 171)
+
+[node name="Suelo6" parent="." unique_id=2040988897 instance=ExtResource("1_cdbbl")]
+position = Vector2(99, 171)
+
+[node name="Suelo7" parent="." unique_id=159068905 instance=ExtResource("1_cdbbl")]
+position = Vector2(117, 171)
+
+[node name="Suelo8" parent="." unique_id=303494565 instance=ExtResource("1_cdbbl")]
+position = Vector2(135, 171)
+
+[node name="Suelo9" parent="." unique_id=136315820 instance=ExtResource("1_cdbbl")]
+position = Vector2(153, 171)
+
+[node name="Suelo10" parent="." unique_id=684093320 instance=ExtResource("1_cdbbl")]
+position = Vector2(171, 171)
+
+[node name="Suelo11" parent="." unique_id=1169734509 instance=ExtResource("1_cdbbl")]
+position = Vector2(189, 171)
+
+[node name="Suelo12" parent="." unique_id=2079245578 instance=ExtResource("1_cdbbl")]
+position = Vector2(207, 171)
+
+[node name="Suelo13" parent="." unique_id=1658231097 instance=ExtResource("1_cdbbl")]
+position = Vector2(225, 171)
+
+[node name="Suelo14" parent="." unique_id=355594324 instance=ExtResource("1_cdbbl")]
+position = Vector2(243, 171)
+
+[node name="Suelo15" parent="." unique_id=845648621 instance=ExtResource("1_cdbbl")]
+position = Vector2(261, 171)
+
+[node name="Suelo16" parent="." unique_id=1719266137 instance=ExtResource("1_cdbbl")]
+position = Vector2(279, 171)
+
+[node name="Suelo17" parent="." unique_id=1419509454 instance=ExtResource("1_cdbbl")]
+position = Vector2(297, 171)
+
+[node name="Suelo18" parent="." unique_id=704106252 instance=ExtResource("1_cdbbl")]
+position = Vector2(315, 171)
+
+[node name="Plataforma1" parent="." unique_id=1532560905 instance=ExtResource("4_v12yk")]
+position = Vector2(70, 125)
+
+[node name="Plataforma2" parent="." unique_id=284902705 instance=ExtResource("4_v12yk")]
+position = Vector2(175, 125)
+
+[node name="Plataforma3" parent="." unique_id=296326215 instance=ExtResource("4_v12yk")]
+position = Vector2(265, 118)
+
+[node name="Plataforma4" parent="." unique_id=381758639 instance=ExtResource("4_v12yk")]
+position = Vector2(120, 80)
+
+[node name="Plataforma5" parent="." unique_id=1510543379 instance=ExtResource("4_v12yk")]
+position = Vector2(225, 75)
+
+[node name="Plataforma6" parent="." unique_id=1523387947 instance=ExtResource("4_v12yk")]
+position = Vector2(170, 38)

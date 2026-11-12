@@ -1,0 +1,14 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/suelo.png" id="1_mqrv0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_owpkr"]
+size = Vector2(18, 18)
+
+[node name="Bloque" type="StaticBody2D" unique_id=1819131647]
+
+[node name="Imagen" type="Sprite2D" parent="." unique_id=184082891]
+texture = ExtResource("1_mqrv0")
+
+[node name="FormaColision" type="CollisionShape2D" parent="." unique_id=1709837639]
+shape = SubResource("RectangleShape2D_owpkr")

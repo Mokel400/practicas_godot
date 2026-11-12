@@ -1,0 +1,12 @@
+# Créditos de los recursos
+
+| Archivo | Origen | Nombre original | Autor | Licencia |
+|---|---|---|---|---|
+| `personaje_1.png` | Kenney - Pixel Platformer | `Tiles/Characters/tile_0000.png` | Kenney (kenney.nl) | CC0 1.0 Universal |
+| `personaje_2.png` | Kenney - Pixel Platformer | `Tiles/Characters/tile_0001.png` | Kenney (kenney.nl) | CC0 1.0 Universal |
+| `suelo.png` | Kenney - Pixel Platformer | `Tiles/tile_0001.png` | Kenney (kenney.nl) | CC0 1.0 Universal |
+| `plataforma.png` | Kenney - Pixel Platformer | `Tiles/tile_0146.png` | Kenney (kenney.nl) | CC0 1.0 Universal |
+
+`plataforma.png` no se usa hasta la práctica 18.
+
+La licencia CC0 no obliga a citar al autor, pero en esta asignatura **siempre** se citan los recursos que no son tuyos.
