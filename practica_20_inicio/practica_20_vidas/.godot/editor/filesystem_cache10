@@ -1,0 +1,13 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1794566488
+::res://assets/::1794566488
+CREDITOS.md::TextFile::-1::1794566396::0::1::::<><><>0<>0<><>::
+murcielago_1.png::CompressedTexture2D::956608992154147256::1794566396::1794566488::1::::<><><>0<>0<>fee0bfc35e8e04b4a6f28575e4934bb1<>res://.godot/imported/murcielago_1.png-eada5becf08478f71c5b2b3b7f95aaf3.ctex::
+murcielago_2.png::CompressedTexture2D::2091210197480642389::1794566396::1794566488::1::::<><><>0<>0<>41c23aa4a35229f04b404cd0b855487e<>res://.godot/imported/murcielago_2.png-f026c1bd76d583f1fc32e5dda96fd654.ctex::
+murcielago_3.png::CompressedTexture2D::3739648636649283240::1794566396::1794566488::1::::<><><>0<>0<>61184c77facf20a7355a6fa84f28dd34<>res://.godot/imported/murcielago_3.png-969cceafaa0100bac7ce42785b6c0071.ctex::
+personaje_1.png::CompressedTexture2D::7965909308384592156::1794566396::1794566488::1::::<><><>0<>0<>701d112782332bd1082a2a4f80cdfb57<>res://.godot/imported/personaje_1.png-0a29a2ef37c79b5cbea3f3aa46d50113.ctex::
+personaje_2.png::CompressedTexture2D::3634317451286751043::1794566396::1794566488::1::::<><><>0<>0<>1fd4774d814fad47cb8cfba393581f87<>res://.godot/imported/personaje_2.png-ac6b7cfb57c8dbb22de2048112823d93.ctex::
+::res://escenas/::1794566396
+mundo.tscn::PackedScene::-1::1794566396::0::1::::<><><>0<>0<><>::res://scripts/personaje.gd<>res://assets/personaje_1.png
+::res://scripts/::1794566396
+personaje.gd::GDScript::2521237968309841548::1794566396::0::1::::<>CharacterBody2D<><>0<>0<><>::
