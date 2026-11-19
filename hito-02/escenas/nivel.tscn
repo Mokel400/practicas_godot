@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://mr0rj51ek3ne"]
+
+[ext_resource type="PackedScene" uid="uid://d2y1c4pov3eje" path="res://escenas/suelo_x_5.tscn" id="1_wx555"]
+
+[node name="Nivel" type="Node2D" unique_id=128559359]
+
+[node name="SueloX5" parent="." unique_id=1230037903 instance=ExtResource("1_wx555")]
+position = Vector2(128, 594)
+
+[node name="SueloX6" parent="." unique_id=1130910021 instance=ExtResource("1_wx555")]
+position = Vector2(448, 594)
+
+[node name="SueloX7" parent="." unique_id=747468664 instance=ExtResource("1_wx555")]
+position = Vector2(768, 594)
+
+[node name="SueloX8" parent="." unique_id=1630128650 instance=ExtResource("1_wx555")]
+position = Vector2(1087, 594)

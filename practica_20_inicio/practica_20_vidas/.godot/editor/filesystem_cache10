@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1794566488
+::res://::1795078866
 ::res://assets/::1794566488
 CREDITOS.md::TextFile::-1::1794566396::0::1::::<><><>0<>0<><>::
 murcielago_1.png::CompressedTexture2D::956608992154147256::1794566396::1794566488::1::::<><><>0<>0<>fee0bfc35e8e04b4a6f28575e4934bb1<>res://.godot/imported/murcielago_1.png-eada5becf08478f71c5b2b3b7f95aaf3.ctex::
@@ -7,7 +7,9 @@ murcielago_2.png::CompressedTexture2D::2091210197480642389::1794566396::17945664
 murcielago_3.png::CompressedTexture2D::3739648636649283240::1794566396::1794566488::1::::<><><>0<>0<>61184c77facf20a7355a6fa84f28dd34<>res://.godot/imported/murcielago_3.png-969cceafaa0100bac7ce42785b6c0071.ctex::
 personaje_1.png::CompressedTexture2D::7965909308384592156::1794566396::1794566488::1::::<><><>0<>0<>701d112782332bd1082a2a4f80cdfb57<>res://.godot/imported/personaje_1.png-0a29a2ef37c79b5cbea3f3aa46d50113.ctex::
 personaje_2.png::CompressedTexture2D::3634317451286751043::1794566396::1794566488::1::::<><><>0<>0<>1fd4774d814fad47cb8cfba393581f87<>res://.godot/imported/personaje_2.png-ac6b7cfb57c8dbb22de2048112823d93.ctex::
-::res://escenas/::1794566396
-mundo.tscn::PackedScene::-1::1794566396::0::1::::<><><>0<>0<><>::res://scripts/personaje.gd<>res://assets/personaje_1.png
-::res://scripts/::1794566396
-personaje.gd::GDScript::2521237968309841548::1794566396::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://escenas/::1794572507
+mundo.tscn::PackedScene::5050304666585297131::1794572507::0::1::::<><><>0<>0<><>::uid://bb6kokwhrogl5::::res://scripts/personaje.gd<>uid://dlq0mlayvpbnw::::res://assets/personaje_1.png<>uid://nvnhffe36tk7::::res://assets/murcielago_1.png<>uid://utf2l5qhwreo::::res://scripts/enemigo.gd<>uid://4186q7eiayhh::::res://assets/murcielago_2.png<>uid://btjrp4qic6wyi::::res://assets/murcielago_3.png<>uid://cda1ut1y8wge::::res://scripts/temporizador.gd
+::res://scripts/::1794573565
+enemigo.gd::GDScript::1443352476325237626::1794573565::0::1::::<>Area2D<><>0<>0<><>::
+personaje.gd::GDScript::2521237968309841548::1794572494::0::1::::<>CharacterBody2D<><>0<>0<><>::
+temporizador.gd::GDScript::146618332212773936::1794568018::0::1::::<>Timer<><>0<>0<><>::

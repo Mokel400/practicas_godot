@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://bl6m0xpyg5da8"]
+
+[ext_resource type="Script" uid="uid://bb6kokwhrogl5" path="res://scripts/personaje.gd" id="1_16hu1"]
+[ext_resource type="Script" uid="uid://6jw6efw0xxq8" path="res://scripts/mundo.gd" id="1_txhqv"]
+[ext_resource type="Texture2D" uid="uid://dlq0mlayvpbnw" path="res://assets/personaje_1.png" id="2_7oex1"]
+[ext_resource type="Texture2D" uid="uid://nvnhffe36tk7" path="res://assets/murcielago_1.png" id="3_4vydk"]
+[ext_resource type="Script" uid="uid://utf2l5qhwreo" path="res://scripts/enemigo.gd" id="3_7oex1"]
+[ext_resource type="Script" uid="uid://cda1ut1y8wge" path="res://scripts/temporizador.gd" id="3_txhqv"]
+[ext_resource type="Texture2D" uid="uid://4186q7eiayhh" path="res://assets/murcielago_2.png" id="4_txhqv"]
+[ext_resource type="Texture2D" uid="uid://btjrp4qic6wyi" path="res://assets/murcielago_3.png" id="5_mb57o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40a7a"]
+size = Vector2(16, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3olcy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_4vydk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_txhqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mb57o")
+}],
+"loop": 1,
+"name": &"volar",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3olcy"]
+radius = 8.0
+
+[node name="Mundo" type="Node2D" unique_id=1952267439]
+script = ExtResource("1_txhqv")
+
+[node name="Personaje" type="CharacterBody2D" parent="." unique_id=73838861]
+position = Vector2(160, 90)
+script = ExtResource("1_16hu1")
+
+[node name="Imagen" type="Sprite2D" parent="Personaje" unique_id=1343887121]
+texture = ExtResource("2_7oex1")
+
+[node name="FormaColision" type="CollisionShape2D" parent="Personaje" unique_id=1639277092]
+shape = SubResource("RectangleShape2D_40a7a")
+
+[node name="Temporizador" type="Timer" parent="Personaje" unique_id=991171421]
+script = ExtResource("3_txhqv")
+
+[node name="Enemigo" type="Area2D" parent="." unique_id=609124155]
+position = Vector2(230, 90)
+script = ExtResource("3_7oex1")
+
+[node name="Imagen" type="AnimatedSprite2D" parent="Enemigo" unique_id=256138872]
+sprite_frames = SubResource("SpriteFrames_3olcy")
+animation = &"volar"
+autoplay = "volar"
+
+[node name="FormaColision" type="CollisionShape2D" parent="Enemigo" unique_id=1130293626]
+shape = SubResource("CircleShape2D_3olcy")
+
+[node name="Temporizador" type="Timer" parent="Enemigo" unique_id=564084553]
+script = ExtResource("3_txhqv")
+
+[node name="Enemigo2" type="Area2D" parent="." unique_id=604772489]
+position = Vector2(250, 90)
+script = ExtResource("3_7oex1")
+
+[node name="Imagen" type="AnimatedSprite2D" parent="Enemigo2" unique_id=183031194]
+sprite_frames = SubResource("SpriteFrames_3olcy")
+animation = &"volar"
+autoplay = "volar"
+
+[node name="FormaColision" type="CollisionShape2D" parent="Enemigo2" unique_id=785517457]
+shape = SubResource("CircleShape2D_3olcy")
+
+[node name="Temporizador" type="Timer" parent="Enemigo2" unique_id=2099271396]
+script = ExtResource("3_txhqv")
+
+[node name="Interfaz" type="CanvasLayer" parent="." unique_id=789853274]
+
+[node name="Vidas" type="Label" parent="Interfaz" unique_id=2073117206]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Vidas: 2	"
+
+[node name="Contador" type="Label" parent="Interfaz" unique_id=1507818458]
+offset_top = 24.0
+offset_right = 67.0
+offset_bottom = 47.0
+text = "Tiempo: "
+
+[connection signal="vidas_cambiadas" from="Personaje" to="." method="_on_personaje_vidas_cambiadas"]
+[connection signal="body_entered" from="Enemigo" to="Enemigo" method="_on_body_entered"]
+[connection signal="body_entered" from="Enemigo2" to="Enemigo2" method="_on_body_entered"]

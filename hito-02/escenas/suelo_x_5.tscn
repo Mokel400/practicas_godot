@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d2y1c4pov3eje"]
+
+[ext_resource type="PackedScene" uid="uid://b2cs2aox2e17n" path="res://escenas/suelo.tscn" id="1_3yujh"]
+
+[node name="SueloX5" type="Node2D" unique_id=1230037903]
+position = Vector2(-33, -23)
+
+[node name="Suelo" parent="." unique_id=962279776 instance=ExtResource("1_3yujh")]
+position = Vector2(-96, 22)
+
+[node name="Suelo2" parent="." unique_id=1505524844 instance=ExtResource("1_3yujh")]
+position = Vector2(-32, 22)
+
+[node name="Suelo3" parent="." unique_id=1371427777 instance=ExtResource("1_3yujh")]
+position = Vector2(32, 22)
+
+[node name="Suelo4" parent="." unique_id=111646365 instance=ExtResource("1_3yujh")]
+position = Vector2(96, 22)
+
+[node name="Suelo5" parent="." unique_id=1257198951 instance=ExtResource("1_3yujh")]
+position = Vector2(160, 22)

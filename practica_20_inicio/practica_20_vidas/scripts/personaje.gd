@@ -17,7 +17,7 @@ func recibir_danio(danio: int) -> void:
 		invulnerable = true
 		vidas -= danio
 		print("Vidas: ", vidas)
-		if vidas == 0:
+		if vidas <= 0:
 			queue_free()
 		else:
 			imagen.modulate = Color(1,1,1,0.4)
