@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://mr0rj51ek3ne"]
 
 [ext_resource type="PackedScene" uid="uid://d2y1c4pov3eje" path="res://escenas/suelo_x_5.tscn" id="1_wx555"]
+[ext_resource type="PackedScene" uid="uid://ca85tf6631b2l" path="res://escenas/personaje.tscn" id="2_ul41a"]
+[ext_resource type="PackedScene" uid="uid://n3hfo3q315rd" path="res://escenas/plataforma.tscn" id="2_xkxn8"]
+[ext_resource type="PackedScene" uid="uid://bf4xp5dm3l1eh" path="res://escenas/pinchos.tscn" id="4_rmw23"]
 
 [node name="Nivel" type="Node2D" unique_id=128559359]
+
+[node name="Personaje" parent="." unique_id=1459127481 instance=ExtResource("2_ul41a")]
+position = Vector2(37, 524)
 
 [node name="SueloX5" parent="." unique_id=1230037903 instance=ExtResource("1_wx555")]
 position = Vector2(128, 594)
@@ -10,8 +16,44 @@ position = Vector2(128, 594)
 [node name="SueloX6" parent="." unique_id=1130910021 instance=ExtResource("1_wx555")]
 position = Vector2(448, 594)
 
-[node name="SueloX7" parent="." unique_id=747468664 instance=ExtResource("1_wx555")]
-position = Vector2(768, 594)
+[node name="Plataforma" parent="." unique_id=1814818084 instance=ExtResource("2_xkxn8")]
+position = Vector2(691, 482)
 
-[node name="SueloX8" parent="." unique_id=1630128650 instance=ExtResource("1_wx555")]
-position = Vector2(1087, 594)
+[node name="Plataforma2" parent="." unique_id=1266999398 instance=ExtResource("2_xkxn8")]
+position = Vector2(883, 482)
+
+[node name="Plataforma3" parent="." unique_id=1455533079 instance=ExtResource("2_xkxn8")]
+position = Vector2(1523, 482)
+
+[node name="Plataforma4" parent="." unique_id=301379493 instance=ExtResource("2_xkxn8")]
+position = Vector2(1331, 482)
+
+[node name="Plataforma5" parent="." unique_id=218607509 instance=ExtResource("2_xkxn8")]
+position = Vector2(1971, 482)
+
+[node name="Plataforma6" parent="." unique_id=75549005 instance=ExtResource("2_xkxn8")]
+position = Vector2(2163, 482)
+
+[node name="Pinchos" parent="." unique_id=1259038995 instance=ExtResource("4_rmw23")]
+position = Vector2(242, 552)
+
+[node name="Pinchos2" parent="." unique_id=205187462 instance=ExtResource("4_rmw23")]
+position = Vector2(305, 552)
+
+[node name="Pinchos3" parent="." unique_id=1192567317 instance=ExtResource("4_rmw23")]
+position = Vector2(1469, 419)
+
+[node name="Pinchos4" parent="." unique_id=1772601623 instance=ExtResource("4_rmw23")]
+position = Vector2(1405, 419)
+
+[node name="Pinchos5" parent="." unique_id=2015291912 instance=ExtResource("4_rmw23")]
+position = Vector2(1341, 419)
+
+[node name="Pinchos6" parent="." unique_id=1012032724 instance=ExtResource("4_rmw23")]
+position = Vector2(2042, 419)
+
+[node name="Pinchos7" parent="." unique_id=430403546 instance=ExtResource("4_rmw23")]
+position = Vector2(1978, 419)
+
+[node name="Pinchos8" parent="." unique_id=2144772186 instance=ExtResource("4_rmw23")]
+position = Vector2(1914, 419)

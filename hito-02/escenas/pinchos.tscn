@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bf4xp5dm3l1eh"]
+
+[ext_resource type="Script" uid="uid://ddr3cxwqd01ws" path="res://scripts/pinchos.gd" id="1_rvpb6"]
+[ext_resource type="Texture2D" uid="uid://vm0eyegl2v6d" path="res://assets/kenney_new-platformer-pack-1.1/Vector/Tiles/spikes.svg" id="2_oesdp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0m7wx"]
+size = Vector2(54, 25)
+
+[node name="Pinchos" type="Area2D" unique_id=1259038995]
+script = ExtResource("1_rvpb6")
+
+[node name="SpritePinchos" type="Sprite2D" parent="." unique_id=1398982197]
+texture = ExtResource("2_oesdp")
+
+[node name="ColisionPinchos" type="CollisionShape2D" parent="." unique_id=1813529204]
+position = Vector2(0, 17.5)
+shape = SubResource("RectangleShape2D_0m7wx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

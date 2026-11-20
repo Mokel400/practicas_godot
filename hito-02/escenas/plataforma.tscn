@@ -1,16 +1,25 @@
 [gd_scene format=3 uid="uid://n3hfo3q315rd"]
 
 [ext_resource type="Texture2D" uid="uid://rvmntgy4fnu3" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/bridge.png" id="1_b5bdj"]
+[ext_resource type="Texture2D" uid="uid://mglvlruoemvy" path="res://assets/kenney_new-platformer-pack-1.1/Vector/Tiles/bridge.svg" id="2_6eams"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ywsw1"]
-size = Vector2(64, 34)
+size = Vector2(192, 34)
 
 [node name="Plataforma" type="StaticBody2D" unique_id=1814818084]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1048066613]
+[node name="Puente1" type="Sprite2D" parent="." unique_id=1048066613]
 texture = ExtResource("1_b5bdj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1272537678]
+[node name="Puente2" type="Sprite2D" parent="." unique_id=2129229874]
+position = Vector2(-64, 0)
+texture = ExtResource("2_6eams")
+
+[node name="Puente3" type="Sprite2D" parent="." unique_id=223607176]
+position = Vector2(64, 0)
+texture = ExtResource("2_6eams")
+
+[node name="ColisionPlataforma" type="CollisionShape2D" parent="." unique_id=1272537678]
 position = Vector2(0, -15)
 shape = SubResource("RectangleShape2D_ywsw1")
 one_way_collision = true
